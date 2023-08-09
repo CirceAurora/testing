@@ -1,11 +1,26 @@
+@file:Suppress("LocalVariableName")
+
+val name: String by settings
+rootProject.name = name
+
 pluginManagement {
     repositories {
-        maven("https://maven.fabricmc.net/")
-        maven("https://maven.architectury.dev/")
-        maven("https://maven.minecraftforge.net/")
+        maven("https://maven.fabricmc.net/") { name = "Fabric" }
+        maven("https://maven.architectury.dev/") { name = "Architectury" }
+        maven("https://maven.minecraftforge.net/") { name = "Forge" }
+        mavenCentral()
         gradlePluginPortal()
+    }
+
+    val kotlin_version: String by settings
+    val architectury_loom_version: String by settings
+    val loom_vineflower_version: String by settings
+
+    plugins {
+        id("org.jetbrains.kotlin.jvm") version kotlin_version
+        id("dev.architectury.loom") version architectury_loom_version
+        id("io.github.juuxel.loom-vineflower") version loom_vineflower_version
     }
 }
 
-rootProject.name = "pstp"
-
+include("common", "fabric")

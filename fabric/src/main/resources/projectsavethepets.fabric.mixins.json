@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dcp.mc.pstp.fabric.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ConfigDirectory"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

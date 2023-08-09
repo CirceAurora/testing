@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dcp.mc.pstp.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "Test"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

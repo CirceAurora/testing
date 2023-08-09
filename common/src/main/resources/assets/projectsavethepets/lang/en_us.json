@@ -1,0 +1,8 @@
+{
+  "key.category.projectsavethepets": "Project: Save the Pets!",
+  "key.projectsavethepets.allowdamage": "Allow Damage",
+  "lore.projectsavethepets.dying-note.1": "The note of the dying pet named,",
+  "lore.projectsavethepets.dying-note.2": "%s.",
+  "lore.projectsavethepets.dying-note.3": "Use this item to revive them!",
+  "lore.projectsavethepets.dying-note.4": "Type: %s"
+}
