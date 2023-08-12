@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "mixins": [
+    "projectsavethepets.fabric.mixins.json",
+    "projectsavethepets.mixins.json"
+  ]
+}

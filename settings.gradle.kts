@@ -12,15 +12,13 @@ pluginManagement {
         gradlePluginPortal()
     }
 
-    val kotlin_version: String by settings
     val architectury_loom_version: String by settings
     val loom_vineflower_version: String by settings
 
     plugins {
-        id("org.jetbrains.kotlin.jvm") version kotlin_version
         id("dev.architectury.loom") version architectury_loom_version
         id("io.github.juuxel.loom-vineflower") version loom_vineflower_version
     }
 }
 
-include("common", "fabric")
+include("common:public", "common:internal", "loaders:fabric")

@@ -3,7 +3,6 @@ import java.util.Calendar
 
 plugins {
     idea
-    id("org.jetbrains.kotlin.jvm") apply false
     id("dev.architectury.loom") apply false
     id("io.github.juuxel.loom-vineflower") apply false
 }
@@ -44,7 +43,12 @@ allprojects {
             options.encoding = "UTF-8"
         }
 
+        named<Delete>("clean") {
+            dependsOn(subprojects.map { it.tasks.named<Delete>("clean") })
+        }
+
         named<Jar>("jar") {
+            dependsOn(subprojects.map { it.tasks.named<Jar>("jar") })
             archiveClassifier = "dev"
         }
     }
@@ -81,13 +85,7 @@ subprojects {
 }
 
 tasks {
-    named<Delete>("clean") {
-        dependsOn(subprojects.map { it.tasks.named<Delete>("clean") })
-    }
-
     named<Jar>("jar") {
-        dependsOn(subprojects.map { it.tasks.named<Jar>("jar") })
-
         from(rootProject.file("LICENSE")) {
             rename {
                 "${it}_${project.extensions.configure<BasePluginExtension>("base") { archivesName }}"
