@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dcp.mc.pstp.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "Test",
+    "accessors.EntityAccessor",
+    "accessors.FoxEntityAccessor",
+    "accessors.KeyBindingAccessor",
+    "effects.Cloud",
+    "effects.Instant",
+    "environmental.BerryBushes",
+    "environmental.Drowning",
+    "environmental.Explosions",
+    "environmental.Fall",
+    "environmental.Fires",
+    "environmental.Freezing",
+    "protection.DirectAttackServer",
+    "protection.Explosions",
+    "protection.Projectile",
+    "protection.SweepingAttack"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "protection.DirectAttackClient"
+  ]
+}

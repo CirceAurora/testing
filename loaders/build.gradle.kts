@@ -1,5 +1,5 @@
 subprojects {
     dependencies {
-        api(project(":common:internal"))
+        api(project(":common", "namedElements"))
     }
 }

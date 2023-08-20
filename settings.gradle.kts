@@ -21,4 +21,4 @@ pluginManagement {
     }
 }
 
-include("common:public", "common:internal", "loaders:fabric")
+include("common:public", "common:internal", "loaders:fabric:internal")

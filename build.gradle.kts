@@ -58,7 +58,6 @@ subprojects {
     apply {
         plugin("dev.architectury.loom")
         plugin("io.github.juuxel.loom-vineflower")
-        plugin("java-library")
     }
 
     dependencies {

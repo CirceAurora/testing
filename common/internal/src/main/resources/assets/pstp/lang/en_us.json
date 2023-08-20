@@ -1,0 +1,8 @@
+{
+  "key.category.pstp": "Project: Save the Pets!",
+  "key.pstp.allowdamage": "Allow Damage",
+  "lore.pstp.dying-note.1": "The note of the dying pet named,",
+  "lore.pstp.dying-note.2": "%s.",
+  "lore.pstp.dying-note.3": "Use this item to revive them!",
+  "lore.pstp.dying-note.4": "Type: %s"
+}

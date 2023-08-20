@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "mixins": [
+    "ptsp.mixins.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "dcp.mc.pstp.fabric.Main"
+    ],
+    "client": [
+      "dcp.mc.pstp.fabric.Client"
+    ]
+  },
+  "breaks": {
+    "projectsavethepets": "*"
+  }
+}

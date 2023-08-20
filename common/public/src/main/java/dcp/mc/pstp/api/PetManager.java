@@ -2,11 +2,11 @@ package dcp.mc.pstp.api;
 
 import java.util.UUID;
 
-import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import org.jetbrains.annotations.NotNull;
 
-public interface PetManager<T extends Entity>
-        extends OwnersProvider<T>, Base<T>
+public interface PetManager<T extends LivingEntity>
+        extends OwnersProvider<T>, PetPredicate<T>, Base<T>
 {
     default boolean removeOwner(@NotNull T entity, @NotNull UUID owner) {
         return false;
